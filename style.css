@@ -1,0 +1,275 @@
+/* Reset dan Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Header Umum dengan Background Gambar */
+header {
+  background-image: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('../img/latar header.jpg');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+header h1 {
+  font-size: 40px;
+  font-style: oblique;
+  margin-bottom: 20px;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+/* Header Bar Navigasi */
+.header-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #007a8e;
+  padding: 20px 40px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header-bar .logo {
+  height: 80px;
+}
+
+.judul {
+  flex: 1;
+  text-align: center;
+  padding: 30px 0; /* Tambahan padding untuk memperbesar area */
+  background-color: rgba(255, 255, 255, 0.05); /* Efek latar belakang lembut */
+  border-radius: 12px;
+}
+
+.judul h1 {
+  font-size: 48px; /* Diperbesar dari 36px */
+  color: #fff;
+  margin-bottom: 15px; /* Sedikit diperbesar */
+}
+
+.judul nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.judul nav a:hover {
+  color: #a2d2dd;
+}
+
+/* Konten Utama */
+main {
+  padding: 5px 20px;
+}
+
+h2 {
+  font-size: 32px;
+  color: #007a8e;
+  margin: 20px 0;
+}
+
+p {
+  font-size: 18px;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+/* Kontainer Berita dan Jadwal */
+#beritaContainer,
+#jadwalContainer {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(112, 83, 83, 0.1);
+  margin-top: 2px;
+  transition: transform 0.3s;
+}
+
+#beritaContainer:hover,
+#jadwalContainer:hover {
+  transform: translateY(-5px);
+}
+
+/* Responsif untuk Perangkat Mobile */
+@media (max-width: 768px) {
+  .header-bar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .judul nav a {
+    margin: 5px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+}
+
+.footer {
+  background-color: #007a8e;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.footer .kontak {
+  margin-bottom: 30px;
+}
+
+.footer h3,
+.footer h4 {
+  margin-bottom: 10px;
+}
+
+.footer p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.footer .sosial-media {
+  margin-top: 20px;
+}
+
+.footer .sosial-media a {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.footer .sosial-media img {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s;
+}
+
+.footer .sosial-media img:hover {
+  transform: scale(1.2);
+}
+
+.footer .peta iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+
+.footer {
+  background-color: #f4f4f4;
+  color: rgb(49, 9, 9);
+  padding: 40px 20px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.footer .kontak {
+  margin-bottom: 30px;
+}
+
+.footer h3,
+.footer h4 {
+  margin-bottom: 10px;
+}
+
+.footer p {
+  margin: 5px 0;
+  font-size: 16px;
+}
+
+.footer .peta iframe {
+  width: 100;
+  height: 200px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  padding-bottom: 20px;
+  background-color: #007a8e;
+  color: white;
+  padding: 30px 20px;
+  border-radius: 0 0 10px 10px;
+}
+
+.kembali {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  background-color: #0055aa;
+  padding: 6px 12px;
+  border-radius: 5px;
+}
+
+.jadwal-section {
+  max-width: 800px;
+  margin: 30px auto;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 16px;
+}
+
+thead {
+  background-color: #004488;
+  color: white;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+.filter-box {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.filter-box input {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
